@@ -16,9 +16,9 @@ int main()
 	for(i=0; i<n; i++) 
 	// 정렬할 값 입력 
 	cin >> s[i]; low=0; high=n-1; for(i=0; i<n; i++)
-	{ // 입력된 값 출력 
+	/*{ // 입력된 값 출력 
 	cout << s[i] << " "; 
-	} 
+	}*/
 	quicksort(low, high, s); cout << endl << endl; 
 	for(i=0; i<n; i++)
 	{ 
