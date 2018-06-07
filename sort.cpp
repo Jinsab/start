@@ -5,27 +5,28 @@ void quicksort(int low, int high, int s[]);
 void partition(int low, int high, int& pivotpoint, int s[]); 
 
 int main() 
-{ 
-	int s[1000]={0}; 
-	int low, high; 
-	int i, n; cout << "" 
+{
+	int s[1000]={0};
+	int low, high;
+	int i, n; cout << ""
 	<< endl; cin >> n; while(n<0 || n>1000)
-	{ // 적당한 값이 나올때 까지 반복 
-	cout << "재입력"<<endl; cin >> n; 
-	} 
-	for(i=0; i<n; i++) 
-	// 정렬할 값 입력 
+	{ // 적당한 값이 나올때 까지 반복
+	cout << "재입력"<<endl; cin >> n;
+	}
+	for(i=0; i<n; i++)
+	// 정렬할 값 입력
 	cin >> s[i]; low=0; high=n-1; for(i=0; i<n; i++)
 	/*{ // 입력된 값 출력 
-	cout << s[i] << " "; 
+	cout << s[i] << " ";
 	}*/
 	quicksort(low, high, s); cout << endl << endl; 
 	for(i=0; i<n; i++)
 	{ 
 	// 정렬된 입력된 출력 
 	cout << s[i] << " "; 
-	} 
-	return 0; 
+	}
+	
+	return 0;
 } 
 	
 	
