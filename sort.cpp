@@ -25,6 +25,7 @@ int main()
 	// 정렬된 입력된 출력 
 	cout << s[i] << " "; 
 	} 
+	
 	return 0; 
 } 
 	
